@@ -55,16 +55,18 @@ async function lampBlink()
     const lamp = document.getElementById("lampada")
     if (!lampIsBroken()) //se a lampIsBroken retornar false
     {
-        buttonOnOff(true, true) //função que liga/desliga botão
-        lamp.src = "img/ligada.jpg" 
-        await delay(0.5)
-        lamp.src = "img/desligada.jpg"
-        await delay(0.5)
-        lamp.src = "img/ligada.jpg" 
-        await delay(0.5)
-        lamp.src = "img/desligada.jpg"
-        await delay(0.5)
-          
+        var contador = 0;
+
+        while (contador < 5)
+        {
+            buttonOnOff(true, true) //função que liga/desliga botão
+            lamp.src = "img/ligada.jpg" 
+            await delay(0.5)
+            lamp.src = "img/desligada.jpg"
+            await delay(0.5)
+            contador++
+        }
+        lamp.src = "img/quebrada.jpg"
     }
 }
 
