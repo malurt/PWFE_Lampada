@@ -15,3 +15,4 @@ Tudo isso foi feito seguindo as boas práticas de prpgramação, como funções 
 ![](img/projetoLigada.png)
 ![](img/projetoDesligada.png)
 ![](img/projetoQuebrada.png)
+![](img/projetoPiscar.png)
