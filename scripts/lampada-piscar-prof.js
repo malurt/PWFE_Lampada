@@ -8,8 +8,10 @@ function buttonOnOff(buttonOnState,buttonOffState )
 {
     const buttonDesligar = document.getElementById("desligar")
     const buttonLigar = document.getElementById("ligar")
+    const buttonPiscar = document.getElementById("piscar")
 
     buttonLigar.disabled = buttonOnState
+    buttonPiscar.disabled = buttonOffState
     buttonDesligar.disabled = buttonOffState
         //recebe o estado que for passado ao invocar a função
 }
@@ -38,7 +40,7 @@ function lampBrake()
 {
     const lamp = document.getElementById("lampada")
     lamp.src = "img/quebrada.jpg" 
-    buttonOnOff(true, true) //função que liga/desliga botão
+    buttonOnOff(true, true, true) //função que liga/desliga botão
 }
 
 function lampIsBroken()
