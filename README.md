@@ -6,6 +6,7 @@ O projeto consiste em criar uma lâmpada que responde às ações do usuário, c
 * Ligar;
 * Desligar;
 * Quebrar;
+* Piscar.
 
 Tudo isso foi feito seguindo as boas práticas de prpgramação, como funções com responsabilidade única.
 
