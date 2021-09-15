@@ -52,6 +52,13 @@ button
     cursor: pointer;
 }
 
+#piscar
+{
+    background-color: rgb(185, 226, 195);
+    border-radius: 3px;
+    border: solid 1px;
+}
+
 img
 {
     cursor: pointer;

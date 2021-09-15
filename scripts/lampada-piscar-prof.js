@@ -8,10 +8,8 @@ function buttonOnOff(buttonOnState,buttonOffState )
 {
     const buttonDesligar = document.getElementById("desligar")
     const buttonLigar = document.getElementById("ligar")
-    const buttonPiscar = document.getElementById("piscar")
 
-    buttonLigar.disabled = buttonOnState
-    buttonPiscar.disabled = buttonOffState
+    buttonLigar.disabled = buttonOnState 
     buttonDesligar.disabled = buttonOffState
         //recebe o estado que for passado ao invocar a função
 }
@@ -76,17 +74,19 @@ function lampBlink()
         idDesligar = setInterval(lampOn, 500)
         idLigar = setInterval(lampOff,1000)
         document.getElementById("piscar").textContent = "Parar"
+        document.getElementById("piscar").style.backgroundColor = "rgb(247, 203, 203)"
     }
 
     else
     {
-        lamStopBlinking()
+        lampStopBlinking()
         buttonPiscar.textContent = "Piscar"
+        document.getElementById("piscar").style.backgroundColor = "rgb(203, 247, 214)"
     }
     
 }
 
-function lamStopBlinking () 
+function lampStopBlinking () 
 {
     clearInterval(idLigar)
     clearInterval(idDesligar)
