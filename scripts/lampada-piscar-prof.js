@@ -39,6 +39,9 @@ function lampBrake()
     const lamp = document.getElementById("lampada")
     lamp.src = "img/quebrada.jpg" 
     buttonOnOff(true, true, true) //função que liga/desliga botão
+
+    const buttonPiscar = document.getElementById("piscar")
+    buttonPiscar.disabled = true
 }
 
 function lampIsBroken()
